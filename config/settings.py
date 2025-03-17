@@ -40,8 +40,14 @@ INSTALLED_APPS = [
 
     # Local Apps
     'blog.apps.BlogConfig',
-    'users.apps.UserConfig',
+    'users.apps.UserConfig',   # Custom user app
 ]
+
+
+# Authentication settings
+# Custom user model defined in users app
+AUTH_USER_MODEL = 'users.CustomUser'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
